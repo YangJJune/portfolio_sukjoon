@@ -13,12 +13,12 @@ const ArticleCard = ({
   return (
     <div>
       <div
-        className="relative w-[500px] cursor-pointer"
+        className="relative w-[500px] h-full min-h-[240px] cursor-pointer"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         {isHovered ? (
-          <div className="relative w-full h-60 overflow-hidden group">
+          <div className="relative w-full h-full overflow-hidden group">
             <img
               src={image}
               className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
@@ -32,7 +32,7 @@ const ArticleCard = ({
           </div>
         ) : (
           <>
-            <img src={image} className="w-full h-60 object-cover" />
+            <img src={image} className="w-full h-full object-cover" />
           </>
         )}
       </div>

@@ -11,7 +11,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <div>
+      <div className="flex flex-col h-screen">
         <TopBar />
         <Outlet />
       </div>
