@@ -35,6 +35,19 @@ export const CardTitleList = [
 
 //TODO : FAST API, React Query, Slack 추가
 //TODO : 이거
+const FastApiBadge: Badge = {
+  bgColor: "#039688",
+  content: "Fast API",
+};
+const ReactQueryBadge: Badge = {
+  bgColor: "#ef4444",
+  content: "React Query",
+};
+const SlackBadge: Badge = {
+  bgColor: "#4a154b",
+  content: "Slack",
+};
+
 const ReactBadge: Badge = {
   bgColor: "#5bc9e6",
   content: "React",
@@ -142,7 +155,11 @@ const DiscordBadge: Badge = {
 // const SlackBadge:Badge={
 //   bgColor
 // }
-export const FrameworkCardList: Badge[] = [ReactBadge, AndroidBadge];
+export const FrameworkCardList: Badge[] = [
+  ReactBadge,
+  AndroidBadge,
+  FastApiBadge,
+];
 export const LanguagesCardList: Badge[] = [
   TSBadge,
   JSBadge,
@@ -153,6 +170,7 @@ export const LanguagesCardList: Badge[] = [
 export const APICardList: Badge[] = [
   StyledCompBadge,
   TailwindBadge,
+  ReactQueryBadge,
   LiveKitBadge,
   YouTubeBadge,
   AxiosBadge,
@@ -160,6 +178,7 @@ export const APICardList: Badge[] = [
 ];
 export const DevCardList: Badge[] = [GithubBadge, GitBadge, FCMBadge, EC2Badge];
 export const CoopCardList: Badge[] = [
+  SlackBadge,
   FigmaBadge,
   NotionBadge,
   TeamsBadge,
